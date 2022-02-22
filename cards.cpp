@@ -96,17 +96,16 @@ int IntBST::max(){
     }
     return n->info;
 }
-void IntBST::printPreOrder() const {
-    printPreOrder(root);
+void IntBST::printInOrder() const {
+    printInOrder(root);
 }
 
 // recursive helper for printPreOrder()
-void IntBST::printPreOrder(Node *n) const {
+void IntBST::printInOrder(Node *n) const {
     if (n) {
-	//cout << n->info << " ";
+	printInOrder(n->left);
     printCard(n->info);
-	printPreOrder(n->left);
-	printPreOrder(n->right);
+	printInOrder(n->right);
     }
 }
 
@@ -338,3 +337,4 @@ bool IntBST::remove(int value){
     }
     return false;
 }
+

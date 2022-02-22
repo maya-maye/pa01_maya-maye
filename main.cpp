@@ -103,7 +103,11 @@ while (bo){
     }
   }
 }
-//a.printPreOrder();
-//b.printPreOrder();
-  return 0;
+cout<<endl;
+cout<<"Alice's cards:"<<endl;
+a.printInOrder();
+cout<<endl;
+cout<<"Bob's cards:"<<endl;
+b.printInOrder();
+return 0;
 }
