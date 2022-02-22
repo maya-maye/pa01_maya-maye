@@ -108,6 +108,18 @@ void IntBST::printInOrder(Node *n) const {
 	printInOrder(n->right);
     }
 }
+void IntBST::printPreOrder() const {
+    printPreOrder(root);
+}
+
+// recursive helper for printPreOrder()
+void IntBST::printPreOrder(Node *n) const {
+    if (n) {    
+    printCard(n->info);
+	printPreOrder(n->left);
+	printPreOrder(n->right);
+    }
+}
 
 IntBST::Node* IntBST::getNodeFor(int value, Node* n) const{
     while(n){

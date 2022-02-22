@@ -11,7 +11,7 @@ all: game
 # 	g++ -std=c++11 -c tests.cpp
 
 game: cards.o main.o utility.o
-	g++ -std=c++11 -o main cards.o main.o utility.o
+	g++ -std=c++11 -o game cards.o main.o utility.o
 
 clean:
 	rm -f *.o game tests

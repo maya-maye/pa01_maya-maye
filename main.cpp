@@ -49,6 +49,10 @@ IntBST a, b;
       b.insert(n.getValue()+add);
   }
   cardFile2.close();
+// b.printInOrder();
+// b.remove(208);
+// cout<<endl;
+// b.printInOrder();
 
 //game!
 bool bo=true;

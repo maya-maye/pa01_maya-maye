@@ -26,6 +26,7 @@ class IntBST {
     int getSuccessor(int value) const;         // successor
     bool remove(int value);                    // delete
     void printInOrder() const;
+    void printPreOrder() const;
     int min();
     int max();
  
@@ -42,5 +43,6 @@ class IntBST {
     Node* getSuccessorNode(int value) const;   // returns the Node containing the successor of the given value
     Node* getPredecessorNode(int value) const; // returns the Node containing the predecessor of the given value 
     void printInOrder(Node *n) const;
+    void printPreOrder(Node *n) const;
 };
 #endif
