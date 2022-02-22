@@ -1,4 +1,4 @@
-all: game tests
+all: game
 	
 # game: files1.cpp files1.hpp
 # 	g++ files1.cpp files1.hpp -std=c++11 -o game.o
@@ -10,7 +10,7 @@ all: game tests
 # tests.o:
 # 	g++ -std=c++11 -c tests.cpp
 
-test: cards.o main.o utility.o
+game: cards.o main.o utility.o
 	g++ -std=c++11 -o main cards.o main.o utility.o
 
 clean:

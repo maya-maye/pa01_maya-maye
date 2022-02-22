@@ -69,7 +69,7 @@ while (bo){
       a.remove(amin);
       b.remove(amin);
       amin=t;
-      //if (amin==0) alice=false;
+      if (amin==0) alice=false;
       first=false;
     }
     else{
@@ -91,7 +91,7 @@ while (bo){
       a.remove(bmax);
       b.remove(bmax);
       bmax=temp;
-      //if (bmax==0) bob=false;
+      if (bmax==0) bob=false;
       first=true;
     }
     else{
