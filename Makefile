@@ -12,6 +12,7 @@ all: game
 
 game: cards.o main.o utility.o
 	g++ -std=c++11 -o game cards.o main.o utility.o
+	./game a0.txt b0.txt
 
 clean:
 	rm -f *.o game tests
