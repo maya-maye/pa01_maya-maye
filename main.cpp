@@ -49,10 +49,37 @@ IntBST a, b;
       b.insert(n.getValue()+add);
   }
   cardFile2.close();
-// b.printInOrder();
-// b.remove(208);
+/*a.printInOrder();
+cout<<endl;
+b.printInOrder();
+cout<<endl;
+a.remove(106);
+b.remove(106);
+a.printInOrder();
+cout<<endl;
+b.printInOrder();
+cout<<endl;
+a.remove(413);
+b.remove(413);
+a.printInOrder();
+cout<<endl;
+b.printInOrder();
+cout<<endl;
+a.remove(108);
+b.remove(108);
+a.printInOrder();
+cout<<endl;
+b.printInOrder();
+cout<<endl;*/
+// b.printPreOrder();
+// b.remove(106);
 // cout<<endl;
-// b.printInOrder();
+// //b.remove(413);
+// //b.remove(108);
+// b.printPreOrder();
+// b.remove(108);
+// cout<<endl;
+// b.printPreOrder();
 
 //game!
 bool bo=true;
@@ -67,9 +94,9 @@ while (bo){
       cout<<"Alice picked matching card ";
       printCard(amin);
       int t=a.getSuccessor(amin);
-      if (bmax==amin){
-        bmax=b.getPredecessor(bmax);
-      }
+      // if (bmax==amin){
+      //   bmax=b.getPredecessor(bmax);
+      // }
       a.remove(amin);
       b.remove(amin);
       amin=t;
@@ -89,9 +116,9 @@ while (bo){
       cout<<"Bob picked matching card ";
       printCard(bmax);
       int temp=b.getPredecessor(bmax);
-      if (bmax==amin){
-        amin=a.getSuccessor(amin);
-      }
+      // if (bmax==amin){
+      //   amin=a.getSuccessor(amin);
+      // }
       a.remove(bmax);
       b.remove(bmax);
       bmax=temp;
