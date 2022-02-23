@@ -71,16 +71,20 @@ a.printInOrder();
 cout<<endl;
 b.printInOrder();
 cout<<endl;*/
-// b.printPreOrder();
-// b.remove(106);
-// cout<<endl;
-// //b.remove(413);
-// //b.remove(108);
-// b.printPreOrder();
-// b.remove(108);
-// cout<<endl;
-// b.printPreOrder();
-
+b.printPreOrder();
+b.remove(405);
+cout<<endl;
+b.remove(108);
+//b.remove(108);
+b.printPreOrder();
+b.remove(106);
+b.remove(408);
+b.remove(201);
+b.remove(402);
+b.remove(411);
+cout<<endl;
+//b.printPreOrder();
+/*
 //game!
 bool bo=true;
 bool first=true;
@@ -139,6 +143,6 @@ cout<<"Alice's cards:"<<endl;
 a.printInOrder();
 cout<<endl;
 cout<<"Bob's cards:"<<endl;
-b.printInOrder();
+b.printInOrder();*/
 return 0;
 }

@@ -1,5 +1,7 @@
-h a
-c 6
+d a
 c 8
-c 9
-d 2
+c 6
+h 5
+h 2
+h 8
+h j

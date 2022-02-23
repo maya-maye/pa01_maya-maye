@@ -295,15 +295,16 @@ int IntBST::getSuccessor(int value) const{
 bool IntBST::remove(int value){
     Node* p = getNodeFor(value, root);
     Node* n = p;
+    root->parent=nullptr;
     if(!n){return false;}
     if((!n->right) && (!n->left)){
         if(!n->parent){
             root = nullptr;
         }
-        if(n->parent->left == n){
+        else if(n->parent->left == n){
             n->parent->left = nullptr;
         }
-        if(n->parent->right == n){
+        else if(n->parent->right == n){
             n->parent->right = nullptr;
         }
       delete n;
