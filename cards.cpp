@@ -293,8 +293,7 @@ int IntBST::getSuccessor(int value) const{
 // delete
 
 bool IntBST::remove(int value){
-    Node* p = getNodeFor(value, root);
-    Node* n = p;
+    Node* n = getNodeFor(value, root);
     root->parent=nullptr;
     if(!n){return false;}
     if((!n->right) && (!n->left)){
