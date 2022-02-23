@@ -313,6 +313,8 @@ bool IntBST::remove(int value){
         if(!n->parent){
             root = n->left;
             root->parent=nullptr;
+            delete n;
+            return true;
         }
         if(n->parent->left == n){
             n->parent->left = n->left;

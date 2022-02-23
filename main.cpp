@@ -22,8 +22,6 @@ int main(int argv, char** argc){
 IntBST a, b;
   //Read each file
   while (getline (cardFile1, line) && (line.length() > 0)){
-      //cout<<line.substr(0,1)<<" ";
-      //cout<<line.substr(2, line.length()-2)<<endl;
       int add=0;
       char temp=line[0];
       if (line[3]){
@@ -32,13 +30,9 @@ IntBST a, b;
       char t=line[2];
       cards n (temp, t);
       a.insert(n.getValue()+add);
-      //MyFile<<line.substr(2, line.length()-2)<<endl;
   }
   cardFile1.close();
-//MyFile.close();
   while (getline (cardFile2, line) && (line.length() > 0)){
-      //cout<<line.substr(0,1)<<" ";
-      //cout<<line.substr(2, line.length()-2)<<endl;
       int add=0;
       char temp=line[0];
       if (line[3]){
