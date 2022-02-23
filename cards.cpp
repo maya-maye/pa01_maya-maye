@@ -298,6 +298,7 @@ bool IntBST::remove(int value){
     root->parent=nullptr;
     if((!n->right) && (!n->left)){
         if(!n->parent){
+            root->parent=nullptr;
             root = nullptr;
         }
         else if(n->parent->left == n){
@@ -312,6 +313,7 @@ bool IntBST::remove(int value){
     if((!n->right) && (n->left)){
         if(!n->parent){
             root = n->left;
+            root->parent=nullptr;
         }
         if(n->parent->left == n){
             n->parent->left = n->left;
@@ -326,6 +328,7 @@ bool IntBST::remove(int value){
     if((n->right) && (!n->left)){
         if(!n->parent){
             root = n->right;
+            root->parent=nullptr;
             delete n;
             return true;
         }
