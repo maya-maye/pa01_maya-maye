@@ -49,42 +49,7 @@ IntBST a, b;
       b.insert(n.getValue()+add);
   }
   cardFile2.close();
-/*a.printInOrder();
-cout<<endl;
-b.printInOrder();
-cout<<endl;
-a.remove(106);
-b.remove(106);
-a.printInOrder();
-cout<<endl;
-b.printInOrder();
-cout<<endl;
-a.remove(413);
-b.remove(413);
-a.printInOrder();
-cout<<endl;
-b.printInOrder();
-cout<<endl;
-a.remove(108);
-b.remove(108);
-a.printInOrder();
-cout<<endl;
-b.printInOrder();
-cout<<endl;*/
-b.printPreOrder();
-b.remove(405);
-cout<<endl;
-b.remove(108);
-//b.remove(108);
-b.printPreOrder();
-b.remove(106);
-b.remove(408);
-b.remove(201);
-b.remove(402);
-b.remove(411);
-cout<<endl;
-//b.printPreOrder();
-/*
+
 //game!
 bool bo=true;
 bool first=true;
@@ -143,6 +108,6 @@ cout<<"Alice's cards:"<<endl;
 a.printInOrder();
 cout<<endl;
 cout<<"Bob's cards:"<<endl;
-b.printInOrder();*/
+b.printInOrder();
 return 0;
 }
